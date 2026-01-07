@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Digital Marketing Agency in Varanasi - OneX Media</title>
+    
+    <link rel="icon" type="image/png" href="logo.png">    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="canvas-container"></div>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo" onclick="showPage('home')">OneX<span>Media</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-item" onclick="showPage('home')">Home</a></li>
+                <li><a class="nav-item" onclick="showPage('about')">About Us</a></li>
+                <li class="dropdown">
+                    <a class="nav-item" href="javascript:void(0)" onclick="toggleMobileDropdown(event)">Services ▾</a>
+                    <ul class="dropdown-menu" id="servicesDropdown">
+                        <li><a class="dropdown-link" onclick="showPage('service-seo')">SEO Services</a></li>
+                        <li><a class="dropdown-link" onclick="showPage('service-smm')">Social Media Marketing</a></li>
+                        <li><a class="dropdown-link" onclick="showPage('service-ppc')">PPC Ads</a></li>
+                        <li><a class="dropdown-link" onclick="showPage('service-web')">Website Development</a></li>
+                        <li><a class="dropdown-link" onclick="showPage('service-graphic')">Graphic Design</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-item" onclick="showPage('blog')">Blog</a></li>
+                <li><a class="nav-item" onclick="showPage('contact')">Contact Us</a></li>
+            </ul>
+            <a href="https://wa.me/+917524057749" class="header-cta"><i class="fab fa-whatsapp"></i> +91 7524-0577-49</a>
+            <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <div id="home" class="page-section active-section">
+        
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h4>Digital Marketing Agency in India</h4>
+                    <h1>Best Digital Marketing Agency in Varanasi</h1>
+                    <p style="font-size: 18px; margin-bottom: 30px;">Get noticed in the digital world with <strong>OneXMedia</strong>. Let’s use creative marketing techniques to make your brand stand out from the crowd!</p>
+                    <button class="btn" onclick="showPage('contact')">Get Started</button>
+                </div>
+                
+                <div class="hero-img-wrap" id="hero-tilt-container">
+                    <img src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=600&q=80" class="hero-bg-shape float-slow" style="border-radius: 50%; opacity: 0.1;">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" class="main-hero-img" alt="Digital Marketing Expert" style="border-radius: 0 0 200px 200px;">
+                    
+                    <div class="hero-card card-pos-1"><div class="card-icon icon-purple"><i class="fas fa-search-dollar"></i></div><div class="card-text"><h5>SEO Audit</h5><span>Ranking #1</span></div></div>
+                    <div class="hero-card card-pos-2"><div class="card-icon icon-orange"><i class="fas fa-chart-line"></i></div><div class="card-text"><h5>Growth</h5><span>+150% Sales</span></div></div>
+                    <div class="hero-card card-pos-3"><div class="card-icon icon-blue"><i class="fas fa-star"></i></div><div class="card-text"><h5>4.9/5</h5><span>Rating</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-bar">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <h3>150+</h3>
+                    <p>Global Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5+</h3>
+                    <p>Industry Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>10+</h3>
+                    <p>Branded Companies</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="client-marquee">
+    <div class="marquee-wrapper">
+        <div class="marquee-track">
+            
+            <div class="client-group">
+                <div class="client-item">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/google-logo.png" alt="Google">
+                    <span>Google</span>
+                </div>
+                <div class="client-item">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/mac-os.png" alt="Apple">
+                    <span>Apple</span>
+                </div>
+                <div class="client-item">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/amazon.png" alt="Amazon">
+                    <span>Amazon</span>
+                </div>
+                <div class="client-item">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/microsoft.png" alt="Microsoft">
+                    <span>Microsoft</span>
+                </div>
+            </div>
+
+            <div class="client-group">
+                <div class="client-item">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/google-logo.png" alt="Google">
+                    <span>Google</span>
+                </div>
+                <div class="client-item">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/mac-os.png" alt="Apple">
+                    <span>Apple</span>
+                </div>
+                <div class="client-item">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/amazon.png" alt="Amazon">
+                    <span>Amazon</span>
+                </div>
+                <div class="client-item">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/microsoft.png" alt="Microsoft">
+                    <span>Microsoft</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+        <section class="section-padding text-center">
+            <div class="container">
+                <h2 class="text-purple" style="font-size: 32px; margin-bottom: 10px;">Our best digital marketing services</h2>
+                <p style="margin-bottom: 50px; color: #666; max-width: 700px; margin-left:auto; margin-right:auto;">As the best digital marketing agency in Varanasi, we’re here to show you the incredible potential of digital marketing.</p>
+                <div class="grid-3">
+                    <div class="service-card" onclick="showPage('service-seo')">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721291.png" class="service-icon">
+                        <h3>SEO</h3>
+                        <p>Unlock your website’s true potential.</p>
+                        <a class="text-orange" style="font-weight:bold;">Read More</a>
+                    </div>
+                    <div class="service-card" onclick="showPage('service-smm')">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1968/1968666.png" class="service-icon">
+                        <h3>Social Media</h3>
+                        <p>Build a powerful online presence.</p>
+                        <a class="text-orange" style="font-weight:bold;">Read More</a>
+                    </div>
+                    <div class="service-card" onclick="showPage('service-web')">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" class="service-icon">
+                        <h3>Website Dev</h3>
+                        <p>Build a strong online presence.</p>
+                        <a class="text-orange" style="font-weight:bold;">Read More</a>
+                    </div>
+                    <div class="service-card" onclick="showPage('service-graphic')">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2972/2972131.png" class="service-icon">
+                        <h3>Graphic Design</h3>
+                        <p>Give your brand a fresh look.</p>
+                        <a class="text-orange" style="font-weight:bold;">Read More</a>
+                    </div>
+                    <div class="service-card" onclick="showPage('service-ppc')">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2620/2620582.png" class="service-icon">
+                        <h3>PPC Ads</h3>
+                        <p>Reach your target audience faster.</p>
+                        <a class="text-orange" style="font-weight:bold;">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-light">
+            <div class="container row-flex">
+                <div class="col-half">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80" class="styled-img" alt="Strategy Meeting">
+                </div>
+                <div class="col-half text-content">
+                    <h2>Why You Need a Digital Marketing Company for Your Business?</h2>
+                    <p>In today’s digital era, standing out is essential for business success. With the right combination of best <strong>social media marketing agency in Varanasi</strong>, best <strong>SEO services in Varanasi</strong>, and best <strong>PPC services in Varanasi</strong>, your business can effectively reach a larger audience.</p>
+                    <button class="btn" onclick="showPage('about')">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 60px;">
+                    <h2 class="text-purple">Let’s take your company’s online presence to new heights</h2>
+                </div>
+                <div class="row-flex">
+                    <div class="col-half text-content">
+                        <h3>Graphic Designing</h3>
+                        <p>We create visual experiences that help people connect. Our designs are crafted to build brands that touch hearts.</p>
+                    </div>
+                    <div class="col-half">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80" class="styled-img" alt="Graphic Design Art">
+                    </div>
+                </div>
+                <div class="row-flex" style="flex-direction: row-reverse;">
+                    <div class="col-half text-content">
+                        <h3>Website Development</h3>
+                        <p>Your website is your digital storefront. We can transform it into a unique brand experience.</p>
+                        <button class="btn-outline" onclick="showPage('service-web')">Learn More</button>
+                    </div>
+                    <div class="col-half">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" class="styled-img" alt="Web Coding">
+                    </div>
+                </div>
+                <div class="row-flex">
+                    <div class="col-half text-content">
+                        <h3>Social Media Marketing</h3>
+                        <p>Building a powerful online presence that effectively connects your brand with your audience.</p>
+                        <button class="btn-outline" onclick="showPage('service-smm')">Learn More</button>
+                    </div>
+                    <div class="col-half">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80" class="styled-img" alt="Mobile SMM">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-light">
+            <div class="container row-flex">
+                <div class="col-half">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" class="styled-img" alt="Growth Graph">
+                </div>
+                <div class="col-half text-content">
+                    <h5>Growth Drives Everything we do</h5>
+                    <p style="margin-top: 15px;">If you want to expand your business online, connect with more potential customers, and build a powerful online presence, digital marketing is the key.</p>
+                    <div style="display: flex; gap: 40px; margin-top: 30px;">
+                        <div><h3 class="text-orange" style="font-size: 40px; margin:0;">10+</h3><p>Advertising Partners</p></div>
+                        <div><h3 class="text-orange" style="font-size: 40px; margin:0;">75%</h3><p>Increase in ROAS</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container text-center">
+                <h2>What our Awesome Customers say?</h2>
+                <br><br>
+                <div class="grid-3">
+                    <div class="testimonial-card"><div class="stars">★★★★★</div><p>“Really it is the best digital marketing agency. I strongly recommend to everyone.”</p><h5 class="text-purple" style="margin-top:15px;">- Ajay Singh</h5></div>
+                    <div class="testimonial-card"><div class="stars">★★★★★</div><p>“Digibazzar is my Marketing Partner and I am highly Satisfied with the strategy.”</p><h5 class="text-purple" style="margin-top:15px;">- Tarun Singh</h5></div>
+                    <div class="testimonial-card"><div class="stars">★★★★★</div><p>“Great experience working with the team. Delivered exactly what they promised.”</p><h5 class="text-purple" style="margin-top:15px;">- Aryan Shailesh</h5></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-light">
+            <div class="container row-flex" style="align-items: flex-start;">
+                <div class="col-half text-content">
+                    <h2>Why we believe we are the Best Digital Marketing Agency in Varanasi?</h2>
+                    <p>We take a holistic approach to digital marketing, combining multiple strategies with best <strong>SEO</strong>, <strong>Social Media</strong>, and <strong>PPC</strong>. This ensures our clients receive the best services and achieve outstanding results.</p>
+                    <h3 style="color:var(--brand-orange); margin-top:20px;">Our Innovations:</h3>
+                    <p>Staying ahead of trends is crucial. We explore new technologies to give clients a competitive edge.</p>
+                    <button class="btn" onclick="showPage('about')">Learn More</button>
+                </div>
+                <div class="col-half" style="position: relative; padding: 20px;">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" style="width:100%; border-radius:10px; position:relative; z-index:1; box-shadow: 0 20px 50px rgba(0,0,0,0.1);" alt="Team Success">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3176/3176390.png" class="float-y" style="position: absolute; bottom: -20px; left: -20px; background:white; padding:10px; width: 150px; z-index:2; border-radius:10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" alt="Top Rated">
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to unlock your digital success?</h2>
+                <p style="margin-bottom: 30px; opacity: 0.9;">Our digital marketing services offer smart solutions to solve any business problem.</p>
+                <button class="btn-white" onclick="showPage('contact')">Get Started</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="about" class="page-section hidden-section">
+        
+        <div class="page-header" style="background-image: linear-gradient(rgba(93, 46, 142, 0.8), rgba(93, 46, 142, 0.8)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80');">
+            <h1>About Us</h1>
+            <p style="font-size: 18px; color: #f0f0f0;">Best Digital Marketing Company in Varanasi</p>
+        </div>
+
+        <section class="section-padding container row-flex">
+            <div class="col-half text-content">
+                <h4 class="text-orange" style="text-transform: uppercase; letter-spacing: 1px; font-weight: 700;">Who We Are?</h4>
+                <h2 style="font-size: 32px; margin-bottom: 20px; line-height: 1.3;">Grow Faster with the Best Digital Marketing Company in Varanasi</h2>
+                <p>Established in 2022, <strong>Digibazzar</strong> is the trusted, full-service best digital marketing company in Varanasi. We are a team of experts with extensive experience in the field of digital marketing that helps businesses grow their online presence and generate more leads.</p>
+                
+                <div style="margin-top: 30px; display: flex; gap: 20px;">
+                    <div style="border-left: 4px solid var(--brand-orange); padding-left: 15px;">
+                        <h3 style="font-size: 20px; color: var(--brand-purple); margin: 0;">Working Employees</h3>
+                        <p style="font-size: 14px; margin: 0;">Advertising Agency in Varanasi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-half">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" class="styled-img" alt="Who We Are">
+            </div>
+        </section>
+
+        <section class="section-padding bg-light">
+            <div class="container row-flex" style="flex-direction: row-reverse;">
+                <div class="col-half text-content">
+                    <h2>What Makes Us The Best Digital Marketing Company in Varanasi?</h2>
+                    <p>Founded in 2022, Digibazzar has quickly established itself as the <strong>Best Digital Marketing Company in Varanasi</strong>, offering a full suite of result-driven digital marketing services. Our team of seasoned experts leverages extensive industry experience to elevate your online presence.</p>
+                    <p>When it comes to your business, we go the extra mile. We collaborate closely with you to create a powerful strategy tailored for growth. As a leading <strong>website development agency in Varanasi</strong>, we build stunning websites that capture attention.</p>
+                    <p>Our comprehensive services include expert <strong>Email Marketing</strong> and effective <strong>PPC services</strong> designed to drive targeted traffic and boost conversions.</p>
+                </div>
+                <div class="col-half">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80" class="styled-img" alt="Team Work">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding text-center">
+            <div class="container">
+                <div class="founder-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" class="founder-img" alt="Adarsh Arya">
+                    <h3 style="color:var(--brand-purple); margin-bottom:5px;">ADARSH ARYA</h3>
+                    <p class="text-orange" style="font-weight: 700; margin-bottom: 20px;">Digital Marketing Expert in Varanasi | Founder & CEO</p>
+                    
+                    <div style="text-align: left; color: #555; font-size: 16px; line-height: 1.8;">
+                        <p style="margin-bottom: 15px;">The word that best captures his essence is <strong>“PIONEER.”</strong> Adarsh Arya is the visionary founder of Digibazzar. His unwavering passion for digital innovation has positioned him as the best digital marketing expert in Varanasi.</p>
+                        <p style="margin-bottom: 15px;">With years of hands-on experience in SEO, Adarsh is recognized as a best SEO expert, consistently delivering strategies that drive organic traffic. He is a performance-driven Google Ads expert and a strategic social media consultant.</p>
+                        <p>As a Meta Ads expert, he excels in building ad funnels that convert. Backed by his leadership, Digibazzar continues to thrive.</p>
+                    </div>
+                    
+                    <h4 style="margin-top: 30px; font-style: italic; color: #222; font-size: 20px;">“The only fashion that never fades is Digital Marketing.”</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-light text-center">
+            <div class="container">
+                <h2 class="text-purple" style="margin-bottom: 50px;">What Clients Value Most?</h2>
+                <div class="grid-3">
+                    <div class="value-card">
+                        <i class="fas fa-eye fa-3x text-orange" style="margin-bottom: 20px;"></i>
+                        <h3>Transparency</h3>
+                        <p>Partner with the best digital marketing company that earns your trust daily through honest communication and impactful results.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-headset fa-3x text-orange" style="margin-bottom: 20px;"></i>
+                        <h3>Quick Support</h3>
+                        <p>Need assistance? Our digital marketing services in Varanasi come with 24/7 support to help you anytime.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-user-check fa-3x text-orange" style="margin-bottom: 20px;"></i>
+                        <h3>User Friendly</h3>
+                        <p>As the best website development company, we prioritize a user-friendly approach to ensure the best experience for every customer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Get your business to new heights.</h2>
+                <button class="btn-white" onclick="showPage('contact')">Contact Us Today</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="service-seo" class="page-section hidden-section">
+    <div class="page-header seo-bg">
+        <div class="header-overlay"></div>
+        <div class="container header-content" data-aos="fade-up">
+            <h1>SEO Services</h1>
+            <p>Dominate Search Results & Drive Organic Traffic</p>
+        </div>
+    </div>
+    
+    <section class="section-padding container sidebar-layout">
+        <div class="content-area text-content" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1571786256017-aee7a0c009b6?auto=format&fit=crop&w=1200&q=80" class="styled-img mb-30" alt="SEO Analysis">
+            
+            <h2 class="text-purple">Best SEO Company in Varanasi</h2>
+            <p>In the competitive digital landscape, being visible on the first page of Google is not just an option—it's a necessity. At <strong>The Digibazzar</strong>, we specialize in data-driven Search Engine Optimization (SEO) strategies that move your website from obscurity to the top of the search results.</p>
+            
+            <p>Our approach goes beyond simple keyword stuffing. We analyze your competitors, optimize your site's technical architecture, and build high-authority backlinks to ensure sustainable growth. Whether you are a local business in Varanasi looking for foot traffic or a national brand seeking global dominance, our SEO experts have the roadmap to your success.</p>
+
+            <h3 class="mt-20">Our Comprehensive SEO Strategy:</h3>
+            <ul class="check-list">
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Comprehensive Site Audit:</strong> Identifying and fixing technical errors (broken links, slow speed) that hold you back.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Keyword Research & Strategy:</strong> Targeting high-intent keywords that drive conversions, not just traffic.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>On-Page Optimization:</strong> Optimizing meta tags, headings, content, and images for maximum relevance.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Local SEO:</strong> Optimizing your Google My Business profile to capture the local Varanasi market.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Content Marketing:</strong> Creating valuable content that answers your customers' questions and builds authority.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Link Building:</strong> Acquiring high-quality backlinks from reputable sources to boost domain authority.</li>
+            </ul>
+
+            <h3 class="mt-20">Why Choose Us for SEO?</h3>
+            <p>We don't believe in "black hat" tricks that get you penalized. We focus on white-hat, ethical SEO practices that deliver long-term results. Our monthly reports provide complete transparency, showing you exactly how your rankings and traffic are improving.</p>
+
+            <button class="btn btn-primary mt-20" onclick="showPage('contact')">Get Free SEO Audit</button>
+        </div>
+
+        <div class="sidebar glass-card">
+            <div class="sidebar-title">All Services</div>
+            <a class="sidebar-link active" onclick="showPage('service-seo')">SEO Services</a>
+            <a class="sidebar-link" onclick="showPage('service-smm')">Social Media</a>
+            <a class="sidebar-link" onclick="showPage('service-ppc')">PPC Ads</a>
+            <a class="sidebar-link" onclick="showPage('service-web')">Web Development</a>
+            <a class="sidebar-link" onclick="showPage('service-graphic')">Graphic Design</a>
+        </div>
+    </section>
+</div>
+
+<div id="service-smm" class="page-section hidden-section">
+    <div class="page-header smm-bg">
+        <div class="header-overlay"></div>
+        <div class="container header-content" data-aos="fade-up">
+            <h1>Social Media Marketing</h1>
+            <p>Build a Brand That People Love & Engage With</p>
+        </div>
+    </div>
+
+    <section class="section-padding container sidebar-layout">
+        <div class="content-area text-content" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=1200&q=80" class="styled-img mb-30" alt="Social Media Strategy">
+            
+            <h2 class="text-purple">Social Media Marketing Agency in Varanasi</h2>
+            <p>Social media is more than just posting pictures; it’s about building a community, telling your brand story, and driving real business results. At <strong>The Digibazzar</strong>, we help brands find their unique voice on platforms like Instagram, Facebook, LinkedIn, and Twitter.</p>
+            
+            <p>We understand that every platform is different. What works on LinkedIn won't necessarily work on Instagram. Our team creates platform-specific strategies that engage your target audience, increase brand loyalty, and turn followers into paying customers.</p>
+
+            <h3 class="mt-20">How We Grow Your Social Presence:</h3>
+            <ul class="check-list">
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Content Creation:</strong> Stunning graphics, reels, and copy that stop the scroll.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Community Management:</strong> Engaging with your audience to build trust and loyalty.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Influencer Marketing:</strong> Collaborating with key voices in your niche to expand reach.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Paid Social Ads:</strong> Laser-targeted ad campaigns on Meta (Facebook/Instagram) and LinkedIn.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Analytics & Reporting:</strong> Tracking engagement rates, reach, and conversions to refine strategy.</li>
+            </ul>
+
+            <div class="glass-card mt-20" style="padding: 20px; background: #f9f9ff; border-left: 5px solid var(--secondary);">
+                <h4>🚀 Viral Content Strategy</h4>
+                <p style="margin-bottom:0; font-size: 14px;">We specialize in creating short-form video content (Reels/Shorts) that has the highest potential for organic virality in 2025.</p>
+            </div>
+
+            <button class="btn btn-primary mt-20" onclick="showPage('contact')">Start Your Campaign</button>
+        </div>
+
+        <div class="sidebar glass-card">
+            <div class="sidebar-title">All Services</div>
+            <a class="sidebar-link" onclick="showPage('service-seo')">SEO Services</a>
+            <a class="sidebar-link active" onclick="showPage('service-smm')">Social Media</a>
+            <a class="sidebar-link" onclick="showPage('service-ppc')">PPC Ads</a>
+            <a class="sidebar-link" onclick="showPage('service-web')">Web Development</a>
+            <a class="sidebar-link" onclick="showPage('service-graphic')">Graphic Design</a>
+        </div>
+    </section>
+</div>
+
+<div id="service-ppc" class="page-section hidden-section">
+    <div class="page-header ppc-bg">
+        <div class="header-overlay"></div>
+        <div class="container header-content" data-aos="fade-up">
+            <h1>PPC Advertising</h1>
+            <p>Instant Traffic, Qualified Leads & High ROI</p>
+        </div>
+    </div>
+
+    <section class="section-padding container sidebar-layout">
+        <div class="content-area text-content" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" class="styled-img mb-30" alt="PPC Analytics">
+            
+            <h2 class="text-purple">Best PPC Agency in Varanasi</h2>
+            <p>Don't want to wait for organic growth? Pay-Per-Click (PPC) advertising puts your brand directly in front of customers who are ready to buy <em>right now</em>. As a leading PPC agency, we manage your ad spend efficiently to ensure you get the maximum Return on Ad Spend (ROAS).</p>
+            
+            <p>We specialize in Google Ads (Search, Display, Shopping) and Social Media Ads. Our team constantly monitors, A/B tests, and optimizes your campaigns to lower your Cost Per Click (CPC) and increase your conversion rate.</p>
+
+            <h3 class="mt-20">Our PPC Management Process:</h3>
+            <ul class="check-list">
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Strategic Planning:</strong> Defining goals, budget, and target audience personas.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Ad Copywriting:</strong> Writing compelling headlines and descriptions that drive clicks.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Landing Page Optimization:</strong> Ensuring the page users land on is designed to convert.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Bid Management:</strong> Smart bidding strategies to get the best ad spots for the lowest price.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Retargeting:</strong> Showing ads to people who visited your site but didn't buy, bringing them back to convert.</li>
+            </ul>
+
+            <p>Stop wasting money on ads that don't convert. Let The Digibazzar supercharge your lead generation.</p>
+
+            <button class="btn btn-primary mt-20" onclick="showPage('contact')">Boost Your Sales</button>
+        </div>
+
+        <div class="sidebar glass-card">
+            <div class="sidebar-title">All Services</div>
+            <a class="sidebar-link" onclick="showPage('service-seo')">SEO Services</a>
+            <a class="sidebar-link" onclick="showPage('service-smm')">Social Media</a>
+            <a class="sidebar-link active" onclick="showPage('service-ppc')">PPC Ads</a>
+            <a class="sidebar-link" onclick="showPage('service-web')">Web Development</a>
+            <a class="sidebar-link" onclick="showPage('service-graphic')">Graphic Design</a>
+        </div>
+    </section>
+</div>
+
+<div id="service-web" class="page-section hidden-section">
+    <div class="page-header web-bg">
+        <div class="header-overlay"></div>
+        <div class="container header-content" data-aos="fade-up">
+            <h1>Website Development</h1>
+            <p>Fast, Secure & Responsive Websites That Convert</p>
+        </div>
+    </div>
+
+    <section class="section-padding container sidebar-layout">
+        <div class="content-area text-content" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" class="styled-img mb-30" alt="Web Development Code">
+            
+            <h2 class="text-purple">Website Development Company in Varanasi</h2>
+            <p>Your website is your 24/7 digital salesperson. If it's slow, outdated, or hard to navigate, you are losing money. At <strong>The Digibazzar</strong>, we build websites that are not just visually stunning but are also performance beasts.</p>
+            
+            <p>We specialize in custom WordPress development, E-commerce solutions (Shopify/WooCommerce), and bespoke coding. We focus heavily on User Experience (UX) to ensure visitors stay longer and take action.</p>
+
+            <h3 class="mt-20">Features of Our Websites:</h3>
+            <ul class="check-list">
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Mobile Responsive:</strong> Looks perfect on phones, tablets, and desktops.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Blazing Fast Speed:</strong> Optimized code and images for under 3-second load times.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>SEO Friendly Structure:</strong> Built with clean code that Google loves to crawl.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Secure (SSL):</strong> Advanced security protocols to protect your data and users.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Easy Management:</strong> User-friendly backend so you can update content easily.</li>
+            </ul>
+
+            <div class="row-flex mt-20">
+                <div class="col-half">
+                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=600&q=80" class="styled-img" style="height: 200px; object-fit: cover;">
+                </div>
+                <div class="col-half">
+                    <h4>E-Commerce Solutions</h4>
+                    <p>Want to sell online? We build robust online stores with secure payment gateways, inventory management, and smooth checkout processes.</p>
+                </div>
+            </div>
+
+            <button class="btn btn-primary mt-20" onclick="showPage('contact')">Get Your Website</button>
+        </div>
+
+        <div class="sidebar glass-card">
+            <div class="sidebar-title">All Services</div>
+            <a class="sidebar-link" onclick="showPage('service-seo')">SEO Services</a>
+            <a class="sidebar-link" onclick="showPage('service-smm')">Social Media</a>
+            <a class="sidebar-link" onclick="showPage('service-ppc')">PPC Ads</a>
+            <a class="sidebar-link active" onclick="showPage('service-web')">Web Development</a>
+            <a class="sidebar-link" onclick="showPage('service-graphic')">Graphic Design</a>
+        </div>
+    </section>
+</div>
+
+<div id="service-graphic" class="page-section hidden-section">
+    <div class="page-header graphic-bg">
+        <div class="header-overlay"></div>
+        <div class="container header-content" data-aos="fade-up">
+            <h1>Graphic Design</h1>
+            <p>Visual Storytelling That Defines Your Brand Identity</p>
+        </div>
+    </div>
+
+    <section class="section-padding container sidebar-layout">
+        <div class="content-area text-content" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80" class="styled-img mb-30" alt="Creative Design">
+            
+            <h2 class="text-purple">Best Graphic Design Agency in Varanasi</h2>
+            <p>First impressions matter. Design is the silent ambassador of your brand. Our creative team at <strong>The Digibazzar</strong> combines art with marketing psychology to create visuals that capture attention and communicate your message instantly.</p>
+            
+            <p>From Logos to social media creatives, brochures to billboards, we handle it all. We ensure consistency across all your marketing materials to build a strong, recognizable brand identity.</p>
+
+            <h3 class="mt-20">Our Design Services:</h3>
+            <ul class="check-list">
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Logo & Branding:</strong> Creating a unique identity that stands out in the market.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Social Media Creatives:</strong> Eye-catching posts, stories, and covers.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Marketing Collateral:</strong> Brochures, flyers, business cards, and banners.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>UI/UX Design:</strong> Designing intuitive interfaces for websites and apps.</li>
+                <li><i class="fas fa-check-circle text-orange"></i> <strong>Ad Creatives:</strong> High-conversion visuals for Google and Facebook ads.</li>
+            </ul>
+
+            <h3 class="mt-20">Why Visuals Matter?</h3>
+            <p>90% of information transmitted to the brain is visual. Professional design builds trust. A poorly designed banner can damage your reputation, while a professionally crafted one establishes authority. We help you look like the industry leader you are.</p>
+
+            <button class="btn btn-primary mt-20" onclick="showPage('contact')">Request a Design</button>
+        </div>
+
+        <div class="sidebar glass-card">
+            <div class="sidebar-title">All Services</div>
+            <a class="sidebar-link" onclick="showPage('service-seo')">SEO Services</a>
+            <a class="sidebar-link" onclick="showPage('service-smm')">Social Media</a>
+            <a class="sidebar-link" onclick="showPage('service-ppc')">PPC Ads</a>
+            <a class="sidebar-link" onclick="showPage('service-web')">Web Development</a>
+            <a class="sidebar-link active" onclick="showPage('service-graphic')">Graphic Design</a>
+        </div>
+    </section>
+</div>
+    <div id="service-ppc" class="page-section hidden-section"><div class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1590212151175-e5879610801b?auto=format&fit=crop&w=1200&q=80');"><h1>PPC Ads</h1></div><section class="section-padding container sidebar-layout"><div class="content-area text-content"><h2>PPC Services</h2><p>Instant leads with Google Ads.</p></div><div class="sidebar"><a class="sidebar-link" onclick="showPage('service-seo')">SEO</a></div></section></div>
+    <div id="service-web" class="page-section hidden-section"><div class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80');"><h1>Web Development</h1></div><section class="section-padding container sidebar-layout"><div class="content-area text-content"><h2>Website Dev</h2><p>Fast, responsive sites.</p></div><div class="sidebar"><a class="sidebar-link" onclick="showPage('service-seo')">SEO</a></div></section></div>
+    <div id="service-graphic" class="page-section hidden-section"><div class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80');"><h1>Graphic Design</h1></div><section class="section-padding container sidebar-layout"><div class="content-area text-content"><h2>Graphic Design</h2><p>Creative visuals.</p></div><div class="sidebar"><a class="sidebar-link" onclick="showPage('service-seo')">SEO</a></div></section></div>
+
+    <div id="blog" class="page-section hidden-section">
+        <div class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80');">
+            <h1>Our Blog</h1>
+            <p style="font-size: 18px; color: #f0f0f0;">Trends, Strategies, and Digital Marketing News</p>
+        </div>
+
+        <section class="section-padding container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <h2 class="text-purple">Latest From Our Blog</h2>
+                <p style="max-width: 600px; margin: 0 auto; color: #666;">Explore our library of 50+ articles on SEO, Social Media, and Web Development.</p>
+            </div>
+
+            <div id="blog-grid-container" class="grid-3">
+                </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <button id="load-more-btn" class="btn-outline" onclick="loadMoreBlogs()">Load More Articles</button>
+            </div>
+        </section>
+
+        <section class="section-padding bg-light text-center">
+            <div class="container">
+                <h2 class="text-purple" style="margin-bottom: 20px;">Subscribe to our Newsletter</h2>
+                <p style="margin-bottom: 30px;">Get the latest marketing tips delivered straight to your inbox.</p>
+                <form style="max-width: 500px; margin: 0 auto; display: flex; gap: 10px;">
+                    <input type="email" placeholder="Enter your email" style="flex: 1; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
+                    <button class="btn" type="button" onclick="alert('Subscribed!')">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <div id="blog-single" class="page-section hidden-section" style="background: #fff;">
+        <div class="container" style="padding: 20px 0; border-bottom: 1px solid #eee;">
+            <button onclick="closeBlogPost()" class="btn-outline" style="border: none; padding-left: 0; display:flex; align-items:center; gap:10px;">
+                <i class="fas fa-arrow-left"></i> Back to Blog Library
+            </button>
+        </div>
+
+        <div class="container" style="margin-top: 30px;">
+            <div class="single-blog-hero">
+                <img id="single-post-img" src="" alt="Blog Cover">
+                <div class="single-blog-overlay">
+                    <span id="single-post-category" class="blog-category" style="position:relative; top:0; left:0; margin-bottom:15px; display:inline-block;">Category</span>
+                    <h1 id="single-post-title">Blog Title Goes Here</h1>
+                    <div class="blog-meta" style="color: rgba(255,255,255,0.9);">
+                        <span id="single-post-date"><i class="far fa-calendar-alt"></i> Date</span> | 
+                        <span><i class="far fa-user"></i> Adarsh Arya</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container section-padding" style="padding-top: 40px;">
+            <div class="row-flex" style="align-items: flex-start; gap: 50px;">
+                <div class="blog-main-content" style="flex: 2;">
+                    <div id="single-post-body">
+                        </div>
+                    
+                    <div class="share-box">
+                        <h4>Share this article:</h4>
+                        <div class="social-btns">
+                            <button class="social-btn fb"><i class="fab fa-facebook-f"></i></button>
+                            <button class="social-btn in"><i class="fab fa-linkedin-in"></i></button>
+                            <button class="social-btn wa"><i class="fab fa-whatsapp"></i></button>
+                            <button class="social-btn tw"><i class="fab fa-twitter"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="feedback-section">
+                        <h3>Leave a Reply</h3>
+                        <p>Your email address will not be published. Required fields are marked *</p>
+                        <form id="commentForm" onsubmit="handleCommentSubmit(event)">
+                            <div class="form-grid">
+                                <input type="text" placeholder="Your Name *" required>
+                                <input type="email" placeholder="Your Email *" required>
+                            </div>
+                            <input type="text" placeholder="Website (Optional)">
+                            <textarea rows="5" placeholder="Write your feedback or comment here... *" required></textarea>
+                            <button type="submit" class="btn">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="sidebar" style="flex: 1;">
+                    <div class="sidebar-title">Explore Services</div>
+                    <div class="sidebar-menu">
+                        <a class="sidebar-link" onclick="showPage('service-seo'); closeBlogPost()">SEO Services</a>
+                        <a class="sidebar-link" onclick="showPage('service-smm'); closeBlogPost()">Social Media</a>
+                        <a class="sidebar-link" onclick="showPage('service-ppc'); closeBlogPost()">PPC Ads</a>
+                        <a class="sidebar-link" onclick="showPage('service-web'); closeBlogPost()">Web Development</a>
+                    </div>
+                    <div class="sidebar-cta">
+                        <i class="fas fa-rocket fa-2x text-purple" style="margin-bottom:15px;"></i>
+                        <h4>Grow Your Business</h4>
+                        <p>Get a free digital audit today.</p>
+                        <button class="btn-outline" onclick="showPage('contact'); closeBlogPost()">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="page-section hidden-section">
+        <div class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1423666639041-f142fcb9449f?auto=format&fit=crop&w=1200&q=80');"><h1>Contact Us</h1></div>
+        <section class="section-padding container row-flex" style="align-items: flex-start;">
+            <div class="col-half text-content">
+                <h3 class="text-orange">Get in Touch</h3>
+                <p>Address: Plot No.6, Opposite Vinayak plaza, Varanasi, UP</p>
+                <p>Phone: +91 7524057749</p>
+                <p>Email: OneXMedia@gmail.com</p>
+                <div style="margin-top:20px; height:300px; background:#eee; border-radius:10px; overflow: hidden;">
+                    <iframe src="https://maps.google.com/maps?q=varanasi&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="col-half">
+                <form class="service-card" style="text-align: left;">
+                    <h3 style="margin-bottom: 20px;">Send a Message</h3>
+                    <input type="text" placeholder="Name" style="width:100%; padding:12px; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+                    <input type="email" placeholder="Email" style="width:100%; padding:12px; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+                    <textarea rows="5" placeholder="Message" style="width:100%; padding:12px; margin:10px 0; border:1px solid #ddd; border-radius:5px;"></textarea>
+                    <button class="btn" style="width:100%;">Submit</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+            <div class="footer-logo" onclick="showPage('home')" style="cursor: pointer; display: inline-block; margin-bottom: 15px;">
+        <img src="newlogo.jpeg" alt="OneX Media" style="height: 60px; width: auto; background: rgb(246, 243, 243); padding: 5px; border-radius: 5px;">
+        </div>
+            <div class="footer-col">
+                <h5>Email Us</h5>
+                <p>OneXMedia@gmail.com</p>
+            </div>
+            <div class="footer-col">
+                <h5>Connect</h5>
+                <p>+91 7524057749</p>
+                <div style="margin-top:10px;">
+                    <i class="fab fa-facebook fa-lg" style="margin-right:10px;"></i>
+                    <i class="fab fa-instagram fa-lg" style="margin-right:10px;"></i>
+                    <i class="fab fa-twitter fa-lg" style="margin-right:10px;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: 50px; border-top: 1px solid #333; padding-top: 20px; font-size: 13px; color: #777;">
+            Copyright ©2025 The OneX Media. All rights reserved.
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
