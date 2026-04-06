@@ -1,4 +1,9 @@
 /* =========================================
+   0. API CONFIG
+   ========================================= */
+const API_BASE = 'https://app-sevewxys.fly.dev';
+
+/* =========================================
    1. THREE.JS 3D BACKGROUND ANIMATION
    ========================================= */
 import * as THREE from 'https://unpkg.com/three@0.160.0/build/three.module.js';
@@ -351,6 +356,7 @@ window.loadMoreBlogs = function() {
 
 window.openBlogPost = function(index) {
     const post = blogPosts[index];
+    currentBlogIndex = index;
     
     // Populate Header
     document.getElementById('single-post-title').innerText = post.title;
@@ -372,6 +378,9 @@ window.openBlogPost = function(index) {
     singlePage.classList.remove('hidden-section');
     singlePage.classList.add('active-section');
 
+    // Load comments from backend
+    loadComments(index);
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
@@ -387,22 +396,137 @@ window.closeBlogPost = function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
-window.handleCommentSubmit = function(event) {
-    event.preventDefault(); 
-    
+/* =========================================
+   5b. CONTACT FORM
+   ========================================= */
+window.handleContactSubmit = async function(event) {
+    event.preventDefault();
     const btn = event.target.querySelector('button');
+    const statusEl = document.getElementById('contact-status');
     const originalText = btn.innerText;
-    
-    btn.innerText = "Posting...";
-    btn.style.opacity = "0.7";
+    btn.innerText = 'Sending...';
+    btn.disabled = true;
 
-    setTimeout(() => {
-        alert("Thank you! Your feedback has been submitted successfully.");
+    try {
+        const res = await fetch(`${API_BASE}/api/contact`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                name: document.getElementById('contact-name').value,
+                email: document.getElementById('contact-email').value,
+                message: document.getElementById('contact-message').value
+            })
+        });
+        const data = await res.json();
+        statusEl.style.display = 'block';
+        statusEl.style.color = '#2ecc71';
+        statusEl.innerText = data.message;
         event.target.reset();
-        btn.innerText = originalText;
-        btn.style.opacity = "1";
-    }, 1500);
+    } catch (err) {
+        statusEl.style.display = 'block';
+        statusEl.style.color = '#e74c3c';
+        statusEl.innerText = 'Something went wrong. Please try again.';
+    }
+    btn.innerText = originalText;
+    btn.disabled = false;
 };
+
+/* =========================================
+   5c. NEWSLETTER FORM
+   ========================================= */
+window.handleNewsletterSubmit = async function(event) {
+    event.preventDefault();
+    const btn = event.target.querySelector('button');
+    const statusEl = document.getElementById('newsletter-status');
+    const originalText = btn.innerText;
+    btn.innerText = 'Subscribing...';
+    btn.disabled = true;
+
+    try {
+        const res = await fetch(`${API_BASE}/api/newsletter`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                email: document.getElementById('newsletter-email').value
+            })
+        });
+        const data = await res.json();
+        statusEl.style.display = 'block';
+        statusEl.style.color = '#2ecc71';
+        statusEl.innerText = data.message;
+        event.target.reset();
+    } catch (err) {
+        statusEl.style.display = 'block';
+        statusEl.style.color = '#e74c3c';
+        statusEl.innerText = 'Something went wrong. Please try again.';
+    }
+    btn.innerText = originalText;
+    btn.disabled = false;
+};
+
+/* =========================================
+   5d. BLOG COMMENT FORM (with backend)
+   ========================================= */
+let currentBlogIndex = 0;
+
+window.handleCommentSubmit = async function(event) {
+    event.preventDefault();
+    const btn = event.target.querySelector('button');
+    const statusEl = document.getElementById('comment-status');
+    const originalText = btn.innerText;
+    btn.innerText = 'Posting...';
+    btn.disabled = true;
+
+    try {
+        const res = await fetch(`${API_BASE}/api/comments`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                post_index: currentBlogIndex,
+                name: document.getElementById('comment-name').value,
+                email: document.getElementById('comment-email').value,
+                website: document.getElementById('comment-website').value,
+                comment: document.getElementById('comment-text').value
+            })
+        });
+        const data = await res.json();
+        statusEl.style.display = 'block';
+        statusEl.style.color = '#2ecc71';
+        statusEl.innerText = data.message;
+        event.target.reset();
+        loadComments(currentBlogIndex);
+    } catch (err) {
+        statusEl.style.display = 'block';
+        statusEl.style.color = '#e74c3c';
+        statusEl.innerText = 'Something went wrong. Please try again.';
+    }
+    btn.innerText = originalText;
+    btn.disabled = false;
+};
+
+async function loadComments(postIndex) {
+    const listEl = document.getElementById('comments-list');
+    if (!listEl) return;
+    try {
+        const res = await fetch(`${API_BASE}/api/comments/${postIndex}`);
+        const comments = await res.json();
+        if (comments.length === 0) {
+            listEl.innerHTML = '<p style="color:#999;">No comments yet. Be the first!</p>';
+            return;
+        }
+        listEl.innerHTML = '<h3 style="margin-bottom:15px;">Comments</h3>' + comments.map(c => `
+            <div style="background:rgba(249,249,249,0.8); padding:15px; border-radius:8px; margin-bottom:12px; border-left:3px solid var(--brand-purple);">
+                <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+                    <strong style="color:var(--brand-purple);">${c.name}</strong>
+                    <small style="color:#999;">${new Date(c.created_at).toLocaleDateString()}</small>
+                </div>
+                <p style="margin:0; color:#555;">${c.comment}</p>
+            </div>
+        `).join('');
+    } catch (err) {
+        listEl.innerHTML = '';
+    }
+}
 
 
 /* =========================================
