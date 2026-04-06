@@ -612,10 +612,11 @@
             <div class="container">
                 <h2 class="text-purple" style="margin-bottom: 20px;">Subscribe to our Newsletter</h2>
                 <p style="margin-bottom: 30px;">Get the latest marketing tips delivered straight to your inbox.</p>
-                <form style="max-width: 500px; margin: 0 auto; display: flex; gap: 10px;">
-                    <input type="email" placeholder="Enter your email" style="flex: 1; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
-                    <button class="btn" type="button" onclick="alert('Subscribed!')">Subscribe</button>
+                <form id="newsletterForm" style="max-width: 500px; margin: 0 auto; display: flex; gap: 10px; flex-wrap: wrap;" onsubmit="handleNewsletterSubmit(event)">
+                    <input id="newsletter-email" type="email" placeholder="Enter your email" required style="flex: 1; padding: 15px; border: 1px solid #ddd; border-radius: 5px; min-width: 200px;">
+                    <button class="btn" type="submit">Subscribe</button>
                 </form>
+                <p id="newsletter-status" style="margin-top:10px; font-weight:600; display:none;"></p>
             </div>
         </section>
     </div>
@@ -662,13 +663,15 @@
                         <p>Your email address will not be published. Required fields are marked *</p>
                         <form id="commentForm" onsubmit="handleCommentSubmit(event)">
                             <div class="form-grid">
-                                <input type="text" placeholder="Your Name *" required>
-                                <input type="email" placeholder="Your Email *" required>
+                                <input id="comment-name" type="text" placeholder="Your Name *" required>
+                                <input id="comment-email" type="email" placeholder="Your Email *" required>
                             </div>
-                            <input type="text" placeholder="Website (Optional)">
-                            <textarea rows="5" placeholder="Write your feedback or comment here... *" required></textarea>
+                            <input id="comment-website" type="text" placeholder="Website (Optional)">
+                            <textarea id="comment-text" rows="5" placeholder="Write your feedback or comment here... *" required></textarea>
                             <button type="submit" class="btn">Post Comment</button>
+                            <p id="comment-status" style="margin-top:10px; font-weight:600; display:none;"></p>
                         </form>
+                        <div id="comments-list" style="margin-top: 30px;"></div>
                     </div>
                 </div>
 
@@ -704,12 +707,13 @@
                 </div>
             </div>
             <div class="col-half">
-                <form class="service-card" style="text-align: left;">
+                <form id="contactForm" class="service-card" style="text-align: left;" onsubmit="handleContactSubmit(event)">
                     <h3 style="margin-bottom: 20px;">Send a Message</h3>
-                    <input type="text" placeholder="Name" style="width:100%; padding:12px; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
-                    <input type="email" placeholder="Email" style="width:100%; padding:12px; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
-                    <textarea rows="5" placeholder="Message" style="width:100%; padding:12px; margin:10px 0; border:1px solid #ddd; border-radius:5px;"></textarea>
-                    <button class="btn" style="width:100%;">Submit</button>
+                    <input id="contact-name" type="text" placeholder="Name" required style="width:100%; padding:12px; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+                    <input id="contact-email" type="email" placeholder="Email" required style="width:100%; padding:12px; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+                    <textarea id="contact-message" rows="5" placeholder="Message" required style="width:100%; padding:12px; margin:10px 0; border:1px solid #ddd; border-radius:5px;"></textarea>
+                    <button class="btn" style="width:100%;" type="submit">Submit</button>
+                    <p id="contact-status" style="margin-top:10px; font-weight:600; display:none;"></p>
                 </form>
             </div>
         </section>
